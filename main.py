@@ -1,11 +1,24 @@
 name = input("Please enter your name: ")
 print(f"Hello: {name} ")
 
+######
+#basic game loop referenced in most TUTS
+#init() //This runs once unless we need to regen the whole game
+#processInput() //we know what this does
+#update() //game logic updates and state changes
+#render() //draw it dude
+#run() //any update functionality goes here outside of user controls and UI
+######
+
+
+#this be the main loop here
 while True:
     action = input("Please type EXIT to exit: ")
     if action.upper() == "EXIT": # we want to check for any case for the match
-        exit()
+        break #break from the main loop and goto end statement
     else: 
-        print("you are at the main menu")
+        print("YOU ARE AT THE MAIN MENU")
+        continue #do more stuff
+        ## we can also use a var to set change status
 
 print("thank you for playing")
