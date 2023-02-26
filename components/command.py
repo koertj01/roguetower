@@ -13,3 +13,8 @@ class UserInterface():
 
     def update(self):
         #we should prob update any state changes in UI here
+        print("")
+
+    def processInput():
+        banner = input("If your here you should prob exit")
+        print(banner)

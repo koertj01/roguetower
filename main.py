@@ -1,5 +1,3 @@
-name = input("Please enter your name: ")
-print(f"Hello: {name} ")
 
 ######
 #basic game loop referenced in most TUTS
@@ -10,8 +8,11 @@ print(f"Hello: {name} ")
 #run() //any update functionality goes here outside of user controls and UI
 ######
 
+#imports
+import components.command.py
 
 #this be the main loop here
+print("Welcome to the ultimate game")
 while True:
     action = input("Please type EXIT to exit: ")
     if action.upper() == "EXIT": # we want to check for any case for the match
